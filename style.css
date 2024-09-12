@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #89ccd6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Вирівнюємо контент зверху */
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  #game {
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px; /* Додаємо відступи зверху та знизу */
+  }
+  
+  #city-name {
+    font-size: 2.5em;
+    margin-bottom: 20px; /* Додаємо більше місця під назвою міста */
+    color: #333; /* Текст стає темнішим для кращої видимості */
+  }
+  
+  #cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 стовпці рівної ширини */
+    grid-gap: 20px;
+    justify-items: center;
+  }
+  
+  .card {
+    width: 300px;
+    height: 300px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  #message {
+    margin: 20px 0;
+    font-size: 1.5em;
+    color: red;
+  }
+  
+  #scoreboard {
+    margin-top: 20px;
+  }
+  
+  #scoreboard p {
+    font-size: 1.3em;
+    margin: 5px 0;
+  }
+  
